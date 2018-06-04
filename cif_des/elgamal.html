@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
+    <title>Cifrar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Principal</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <script src="jquery/jquery.min.js"></script>
     <script src = "js/bootstrap.min.js"></script>
+    <script src="script/elGamal.js"></script>
 </head>
-<body background= "images/smartcity.png">
+<body  background= "images/smartcity.png">
         <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                   <div class="navbar-header">
@@ -22,16 +23,16 @@
                 </div>
               </nav>
 
-  
-    <div id="cifradoPorBloques" align = "center" >
-        <h1>P&aacute;gina Principal</h1>
-        <p><h3></h3></p>
-        <br/> 
-        <p><a href="cifrar.html"><button type="button" class="btn btn-primary"> Cifrar por Bloques</button></a></p>
-        <br/>
-        <p> <a href = "descifrar.html"><button type="button" class="btn btn-primary">Descifrar Mensaje</button></a></p>
-        <br/>
-        <p><a href="elgamal.html"><button type="button" class="btn btn-primary">Cifrado ElGamal</button></a></p>
-    </div>
- </body>
+
+              <div id ="divCifrar" align = "center" >
+                <p>
+                    <h3>Para ver el fincionamiento de este algoritmo, por favor abrir la consola
+                    <br/>
+                    y dar clic en el bot&oacute;n de Ejecutar.
+                    </h3>
+                </p>
+                <br/>
+                <p><button  name="cifrar" id="cifrar" onclick="principal()" class="btn btn-info">Ejecutar</button></p>
+               </div>
+</body>
 </html>

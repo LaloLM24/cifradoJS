@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Principal</title>
+    <meta charset="UTF-8">
+    <title>Descifrar</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <script src="script/descifrado.js"></script>
     <script src="jquery/jquery.min.js"></script>
     <script src = "js/bootstrap.min.js"></script>
 </head>
 <body background= "images/smartcity.png">
+
         <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                   <div class="navbar-header">
@@ -22,16 +23,21 @@
                 </div>
               </nav>
 
-  
-    <div id="cifradoPorBloques" align = "center" >
-        <h1>P&aacute;gina Principal</h1>
-        <p><h3></h3></p>
-        <br/> 
-        <p><a href="cifrar.html"><button type="button" class="btn btn-primary"> Cifrar por Bloques</button></a></p>
-        <br/>
-        <p> <a href = "descifrar.html"><button type="button" class="btn btn-primary">Descifrar Mensaje</button></a></p>
-        <br/>
-        <p><a href="elgamal.html"><button type="button" class="btn btn-primary">Cifrado ElGamal</button></a></p>
+    <center><h1>Descifrado</h1> </center>
+    <br/>
+    <br/>
+
+    <div align = "center">
+            <p><h3>Inserte JSON cifrado:</h3></p>
+            <br/>           
+            <p><textarea id = "entrada" rows="7" cols="50"></textarea></p>
+            <br/>
+            <p><button id="descifrar" onclick="principal()" class="btn btn-info">Descifrar</button></p>
+            <br/>
+            <p><h3>Resultado:</h3></p>
+            <br/>
+            <p><textarea id="resultado" rows="7" cols="50"></textarea></p>
     </div>
- </body>
+    
+</body>
 </html>
